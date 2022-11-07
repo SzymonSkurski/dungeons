@@ -1,15 +1,17 @@
-require('./bootstrap');
+require('./js/bootstrap');
 window.Vue = require('vue');
 
-import store from './store/index'
-console.log('das');
+import store from './js/store';
+import Tiles from './components/Tiles';
 
-Vue.component('tiles', require('../components/Tiles'))
 // Vue.component('createPost', require('./components/CreatePost.vue'))
 
 const app = new Vue({
     el: '#app',
-    store
+    store,
+    components: {
+        Tiles,
+    },
 });
 
 //

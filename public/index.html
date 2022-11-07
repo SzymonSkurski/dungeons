@@ -6,10 +6,12 @@
 </head>
 <body>
 <div id="app">
-    <accordion v-for="item int items" : :key="item.id"></accordion>
+    <!--<accordion v-for="item in items" :key="item.id" :item="item"></accordion>-->
+    <!-- <list></list> -->
+    <tile v-for="tile in tiles" :key="tile.id" :tile="tile"></tile>
 </div>
 
-<script src="/public/dist/app.js"></script>
+<script src="./dist/app.js"></script>
 
 
 </body>

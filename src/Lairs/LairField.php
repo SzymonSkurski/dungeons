@@ -6,7 +6,7 @@
  * Time: 22:06
  */
 
-class LairField
+class LairField extends \App\Field
 {
 
 }
